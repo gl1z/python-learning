@@ -40,17 +40,10 @@ After resolving the merge, cleaning the repository, and setting up the correct i
 
 ### Push rejected
 Cause: Remote had commits that local did not have
-
 Fix: git pull origin master --allow-unrelated-histories
-
 ### Stuck in Vim during merge
-
 Fix: Press Esc, then type :wq and press Enter
-
 ### Accidentally committed .idea
-
 Fix: Add .idea to .gitignore
-
 Then run: git rm -r --cached .idea
-
 Then commit and push

@@ -38,14 +38,14 @@ Another issue I faced was accidentally committing the .idea folder from PyCharm 
 After resolving the merge, cleaning the repository, and setting up the correct ignore rules, I was able to successfully merge and push my changes to GitHub. By the end of this process, I better understood how Git handles remote and local differences, how merges work, how to use Vim in a basic way, and how to properly configure a .gitignore file to keep a repository clean.
 ## Practical Notes (Quick Reference)
 
-Push rejected
+### Push rejected
 Cause: Remote had commits that local did not have
 Fix: git pull origin master --allow-unrelated-histories
 
-Stuck in Vim during merge
+### Stuck in Vim during merge
 Fix: Press Esc, then type :wq and press Enter
 
-Accidentally committed .idea
+### Accidentally committed .idea
 Fix: Add .idea to .gitignore
 Then run: git rm -r --cached .idea
 Then commit and push

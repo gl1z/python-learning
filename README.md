@@ -54,23 +54,25 @@ By the end of this process, I better understood how Git handles remote and local
 Cause: Remote had commits that local did not have  
 
 Fix:
-git pull origin master --allow-unrelated-histories
+- git pull origin master --allow-unrelated-histories
 
 ---
 
 ### Stuck in Vim During Merge
 
 Fix:
-Press Esc
-Type :wq
-Press Enter
+- Press Esc
+- Type :wq
+- Press Enter
 
 ---
 
 ### Accidentally Committed `.idea`
 
 Fix:
+```
 Add .idea to .gitignore
 git rm -r --cached .idea
 git commit -m "Remove .idea from tracking"
 git push
+```
